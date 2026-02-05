@@ -1,0 +1,22 @@
+public class maxsubarray {
+
+    static int array(int arr[]) {
+        int current = arr[0];
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (current < 0) {
+                current = arr[i];
+
+            } else {
+                current = current + arr[i];
+            }
+            if (current > max) {
+                max = current;
+            }
+        }
+        return max;
+    }
+    public static void main(String[]args){
+        int arr[]={-2, 1, -3, 4, -1, 2};
+       System.out.println(array(arr))
+}
