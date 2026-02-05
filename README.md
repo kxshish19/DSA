@@ -1,2 +1,5 @@
 # DSA
-Daily DSA practice in Java
+Daily DSA practice
+Language: Java
+
+
